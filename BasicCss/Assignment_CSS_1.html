@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            height: 80px;
+            background-color: blue;
+            /* margin-bottom: 28px; */
+        }
+
+        .row {
+            height: 450px;
+            width: 100%;
+            padding: 15px 0px;
+        }
+
+        .column-1 {
+            height: 100%;
+            width: 70%;
+            padding-right: 7px;
+            float: left;
+        }
+
+        .column-2 {
+            height: 100%;
+            width: 30%;
+            padding-left: 7px;
+            float: left;
+        }
+
+        .innerColumn1 {
+            height: 100%;
+            background-color: red;
+            width: 100%;
+        }
+
+        .innerColumn2 {
+            height: 100%;
+            width: 100%;
+            background-color: #f1f1f1;
+
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            height: 80px;
+            background-color: blue;
+            /* margin-top: 28px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="row">
+            <div class="column-1">
+                <div class="innerColumn1"></div>
+            </div>
+            <div class="column-2">
+                <div class="innerColumn2"></div>
+
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

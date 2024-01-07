@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+
+        .wrapper {
+            background-color: #E70000;
+        }
+
+        .upperRow {
+            padding: 40px;
+        }
+
+        .upperLeftColumn {
+            padding: 35px;
+            height: 100%;
+            width: 700px;
+            float: left;
+        }
+
+        .upperRightColumn {
+
+            float: left;
+        }
+
+        .upperRow::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .lowerRow {
+            height: 300px;
+        }
+
+        .box1 {
+            height: 100%;
+            width: 33.3%;
+            float: left;
+            padding-right: 2px;
+        }
+
+        .box2 {
+            border-left: 2px solid #E70000;
+            border-right: 2px solid #E70000;
+            height: 100%;
+            width: 33.3%;
+            float: left;
+            padding: 0px 2px;
+        }
+
+        .box3 {
+            height: 100%;
+            width: 33.3%;
+            float: left;
+            padding-left: 2px;
+        }
+
+        .lowerRow::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .innerbox {
+            height: 100%;
+            background-color: #571212;
+            padding: 40px 40px;
+        }
+
+
+
+        h1 {
+            color: #ffff;
+            font-size: 40px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        h3 {
+            color: #ffff;
+            font-size: 25px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p {
+
+            margin-top: 30px;
+            color: rgb(248, 170, 170);
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+
+            <div class="upperRow">
+                <div class="upperLeftColumn">
+                    <h1>
+                        Down with the state
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quam odit inventore, maxime
+                        dignissimos
+
+                    </p>
+                </div>
+                <div class="upperRightColumn">
+                    <img src="./logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="lowerRow">
+                <div class="box1">
+                    <div class="innerbox">
+
+                        <h3>But what about the roads?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse aspernatur rerum, veritatis
+                            corporis
+                            nostrum velit beatae fugit sapiente </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="innerbox">
+
+                        <h3>Is taxation theft?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ad delectus tempore
+                            distinctio
+                            minus animi veritatis similique iste, voluptatibus voluptatum unde recusandae ullam
+                        </p>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="innerbox">
+
+                        <h3>SO, what you're saying is...?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam ratione atque
+                            rerum?
+
+                            <br>
+                            <br>
+
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, ratione!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

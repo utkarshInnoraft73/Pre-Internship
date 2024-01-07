@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .container {
+            width: 500px;
+            margin: 25px auto;
+        }
+    </style>
+</head>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            if ($("#firstname").val() === "" || $("#lastname").val() === "") {
+                alert("Please fill all the fields");
+            }
+
+            else {
+                alert("First Name: " + $("#firstname").val() + "\nLast Name: " + $("#lastname").val())
+            }
+        })
+    })
+</script>
+
+<body>
+
+    <div class="container">
+        <!-- <h2>Registration</h2> -->
+        <form action="" name="registration">
+
+            <label for="firstname">First Name</label>
+            <br>
+            <input type="text" name="firstname" id="firstname" placeholder="" /><br>
+            <br>
+            <label for="lastname">Last Name</label>
+            <br>
+            <input type="text" name="lastname" id="lastname" placeholder="" />
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

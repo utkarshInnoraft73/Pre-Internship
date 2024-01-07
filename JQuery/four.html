@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            cursor: pointer;
+            padding: 32px;
+            text-align: center;
+            height: 80px;
+            background-color: rgb(77, 212, 249);
+        }
+
+        .row {
+            height: 450px;
+            padding: 15px 0;
+        }
+
+        .leftColumn {
+            cursor: pointer;
+            padding-top: 10px;
+            float: left;
+            height: 100%;
+            text-align: center;
+            width: 29.5%;
+            background-color: greenyellow;
+        }
+
+        .rightColumn {
+            height: 100%;
+            float: right;
+            width: 69.5%;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .mainContent {
+            padding-top: 10px;
+            text-align: center;
+            height: 64%;
+            margin-bottom: 15px;
+            background-color: yellow;
+        }
+
+        .extraContent {
+            cursor: pointer;
+            padding: 59px;
+            text-align: center;
+            height: 32%;
+            background-color: gray;
+        }
+
+        .footer {
+            padding: 32px;
+            text-align: center;
+            height: 80px;
+            width: 100%;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<script>
+    $(document).ready(function () {
+        $(".header").click(function () {
+            $(this).css("background-color", "red")
+        })
+        $(".leftColumn").click(function () {
+            $(this).text("Leftbar")
+        })
+        $(".extraContent").click(function () {
+            $(".mainContent").fadeOut();
+        })
+    })
+
+</script>
+
+<body>
+    <div class="container">
+        <div class="header">
+            Header
+        </div>
+        <div class="row">
+            <div class="leftColumn">Sidebar</div>
+            <div class="rightColumn">
+                <div class="mainContent">Main content</div>
+                <div class="extraContent">Extra content</div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+
+
+
+</body>
+
+</html>

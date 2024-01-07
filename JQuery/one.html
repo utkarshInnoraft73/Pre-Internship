@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .container {
+            width: 700px;
+            margin: auto;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 12px 0px;
+
+        }
+    </style>
+</head>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $(".box").hide();
+        })
+    })
+</script>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <button>Click me</button>
+    </div>
+</body>
+
+</html>

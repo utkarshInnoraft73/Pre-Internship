@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    #navbar {
+        height: 85px;
+        /* width: 100vw; */
+        padding: 5px 0px;
+        background-color: #D9D9D9;
+    }
+
+    .navContainer {
+
+
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    #navbar div ul {
+
+        display: flex;
+        flex-direction: row;
+        padding: 12px 0px;
+        /* align-items: center; */
+        list-style-type: none;
+    }
+
+    #navbar div ul li a {
+        display: block;
+        color: #62abe7;
+        text-align: center;
+        margin: 0px 3px;
+        padding: 14px 20px;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+    #navbar div ul li a:hover:not(.active) {
+        background-color: #111;
+        color: #fff;
+    }
+
+    #navbar div ul li .active {
+        background-color: #111;
+        color: #fff;
+    }
+
+    #banner {
+
+        background-color: #06A3CC;
+        height: 300px;
+    }
+
+    .bannerContainer {
+        height: 300px;
+        width: 1200px;
+        position: relative;
+        margin: auto;
+
+
+    }
+
+    .centerText {
+        /* display: inline; */
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* color: white; */
+    }
+
+    .centerText h1 {
+        font-size: 104px;
+        color: #fff;
+    }
+
+    .leftButton {
+        /* display: inline; */
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+    }
+
+    .rightButton {
+        /* display: inline; */
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(0%, -50%);
+    }
+
+    #mainContent {
+        padding: 12px 0;
+        height: 450px;
+        width: 1200px;
+        display: flex;
+        margin: auto;
+    }
+
+    .leftBox {
+        width: 40%;
+        background-color: #FFE469;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .innerBox {
+        position: absolute;
+        top: 20px;
+        left: -50px;
+        width: 300px;
+        height: 350px;
+        background-color: #D39ED6;
+    }
+
+    .rightBox {
+        height: 450px;
+        width: 60%;
+    }
+
+    .upperBox {
+        border-left: 12px solid #fff;
+        height: 300px;
+        background-color: #ED8719;
+    }
+
+    .upperBox div {
+        padding: 20px;
+    }
+
+    .formInput {
+        padding: 15px 20px;
+        width: 450px;
+        background-color: #F8A549;
+        margin: 10px 0px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .formButton {
+        padding: 15px 20px;
+        background-color: #F8A549;
+        margin: 10px 0px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .lowerBox {
+        border-top: 12px solid #fff;
+        border-left: 12px solid #fff;
+        height: 125px;
+        background-color: #8AE33B;
+    }
+
+    #footer {
+        /* width: 100vw; */
+        height: 85px;
+        background-color: #007694;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #footer ul {
+
+        display: flex;
+        flex-direction: row;
+        padding: 12px 0px;
+        list-style-type: none;
+    }
+
+    #footer ul li {
+
+        display: block;
+        color: #fff;
+        text-align: center;
+        margin: 0px 3px;
+        padding: 5px 20px;
+        text-decoration: none;
+        border-right: 2px solid #fff;
+    }
+
+
+    #footer ul li:last-child {
+        border-right: none;
+    }
+</style>
+
+<body>
+    <!-- Navbar Starts here -->
+    <nav id="navbar">
+        <div class="navContainer">
+
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" alt="logo" height="70" width="70">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li><a class="active">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Profile</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends here -->
+
+    <!-- Banner Starts Here -->
+    <section id="banner">
+        <div class="bannerContainer">
+
+            <div class="leftButton">
+                <img src="leftbutton.png" alt="logo">
+            </div>
+            <div class="centerText">
+                <h1>Banner</h1>
+            </div>
+            <div class="rightButton">
+
+                <img src="rightbutton.png" alt="logo">
+            </div>
+        </div>
+    </section>
+    <!-- Banner Ends Here -->
+    <!-- Content Starts here -->
+    <section id="mainContent">
+        <div class="leftBox">
+            <div class="innerBox"></div>
+        </div>
+        <div class="rightBox">
+            <div class="upperBox">
+                <div>
+
+                    <form>
+                        <input type="text" class="formInput">
+                        <br>
+                        <input type="text" class="formInput">
+                        <br>
+                        <input list="List" class="formInput">
+                        <br>
+                        <input class="formButton" type="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="lowerBox"></div>
+        </div>
+    </section>
+    <!-- Content Ends here -->
+    <!-- Footer Starts here -->
+    <footer id="footer">
+        <div>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Profile</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer Ends here -->
+
+
+</body>
+
+</html>
